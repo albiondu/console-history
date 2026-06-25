@@ -102,7 +102,7 @@
 <body>
 <div class="container">
     <h1>🎮 家用遊戲主機歷史年表</h1>
-    <p class="subtitle">從第一世代到第九世代 · 1972–2026</p>
+    <p class="subtitle">從第一世代到 FPGA 復古世代 · 1972–2026</p>
 
     <!-- 第一世代 -->
     <div class="generation">
@@ -259,8 +259,77 @@
         </div>
     </div>
 
+    <!-- FPGA 復古硬體世代 -->
+    <div class="generation" style="border-color: #8b6914;">
+        <div class="gen-header" style="background: linear-gradient(135deg, #1a1a2e, #2a1f0e);">
+            <h2>🟤 FPGA 復古硬體世代（週期精確 · 開放生態系） <span>2021–至今</span></h2>
+            <p class="gen-desc">FPGA 技術從玩家自製邁入商業化量產。以電路層級週期精確復刻取代軟體模擬，支援原版實體媒體、4K 輸出與零延遲輸入。不追求畫面特效，以硬體精準度與遊戲保存為核心價值。</p>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr><th>年份</th><th>主機名稱</th><th>製造商</th><th>FPGA / 記憶體</th><th>目標系統</th><th>重要意義</th></tr>
+                <tr>
+                    <td class="year">2021</td>
+                    <td class="console-name">Analogue Pocket</td>
+                    <td class="company">Analogue</td>
+                    <td>Altera Cyclone V</td>
+                    <td>GB/GBC/GBA</td>
+                    <td class="significance">掌上型多合一 FPGA 主機，開創 OpenFPGA 核心生態系</td>
+                </tr>
+                <tr>
+                    <td class="year">2023</td>
+                    <td class="console-name">Analogue Duo</td>
+                    <td class="company">Analogue</td>
+                    <td>Altera Cyclone V</td>
+                    <td>PC Engine / TurboGrafx-16</td>
+                    <td class="significance">首款 PC Engine FPGA 復刻，支援 HuCard 與光碟</td>
+                </tr>
+                <tr>
+                    <td class="year">2025</td>
+                    <td class="console-name">SuperStation One</td>
+                    <td class="company">Retro Remake</td>
+                    <td>Cyclone V SX (110K LE) + 128MB SDRAM</td>
+                    <td>PS1 / 相容 MiSTer 50+ 核心</td>
+                    <td class="significance">首款平價 FPGA 遊戲機（$179），可選 SuperDock CD 光碟機</td>
+                </tr>
+                <tr>
+                    <td class="year">2025</td>
+                    <td class="console-name">Analogue 3D</td>
+                    <td class="company">Analogue</td>
+                    <td>Cyclone 10 GX (220K LE) + 128MB SDRAM</td>
+                    <td>Nintendo 64（全球區碼）</td>
+                    <td class="significance">業界首款 N64 FPGA 完整復刻，HDMI 2.1 4K/60 HDR VRR 輸出</td>
+                </tr>
+                <tr>
+                    <td class="year">2026</td>
+                    <td class="console-name">RetroCore FPGA（概念設計）</td>
+                    <td class="company">—</td>
+                    <td>Cyclone 10 GX (220K LE) + 256MB DDR3 + 128MB 專用 SDRAM</td>
+                    <td>NES/SNES/MD/PS1/N64/PCE/GB 等 50+ 系統</td>
+                    <td class="significance">模組化多系統 FPGA 主機，內建卡匣槽 + 40-pin 擴充模組，2× SNAC 控制器埠，被動散熱 < 40W，目標 $249</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- FPGA 比較表 -->
+    <div class="generation" style="border-color: #8b6914;">
+        <div class="gen-header" style="background: linear-gradient(135deg, #1a1a2e, #2a1f0e);">
+            <h2>📊 FPGA 復古主機比較</h2>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr><th>主機</th><th>FPGA</th><th>定價</th><th>目標系統</th><th>特點</th></tr>
+                <tr><td class="console-name">Analogue Pocket</td><td>Cyclone V</td><td>$219</td><td>GB/GBC/GBA</td><td>掌機 + 底座 HDMI 輸出</td></tr>
+                <tr><td class="console-name">Analogue 3D</td><td>Cyclone 10 GX</td><td>$249</td><td>N64</td><td>4K 輸出，零延遲</td></tr>
+                <tr><td class="console-name">SuperStation One</td><td>Cyclone V SX</td><td>$179</td><td>PS1 / 多系統</td><td>MiSTer 相容，可加 CD 光碟機</td></tr>
+                <tr><td class="console-name">RetroCore FPGA</td><td>Cyclone 10 GX</td><td>$249</td><td>NES/SNES/MD/PS1/N64 等 50+</td><td>模組化擴充，開放生態系，被動散熱</td></tr>
+            </table>
+        </div>
+    </div>
+
     <div class="footer">
-        <p>資料來源：NotebookLM 筆記本「新世代復古遊戲主機硬體設計」· 90 筆資料來源</p>
+        <p>資料來源：NotebookLM 筆記本「新世代復古遊戲主機硬體設計」</p>
         <p>由 Claude Code + NotebookLM MCP 自動生成 · <a href="https://github.com/albiondu">Albion Du</a></p>
     </div>
 </div>
