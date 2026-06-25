@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家用遊戲主機歷史年表</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: #0f0f1a;
+            color: #e0e0e0;
+            padding: 40px 20px;
+        }
+        .container { max-width: 1000px; margin: 0 auto; }
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+            background: linear-gradient(135deg, #ff6b6b, #667eea, #ff6b6b);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+        .subtitle { text-align: center; color: #888; margin-bottom: 40px; font-size: 0.95em; }
+        .generation {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border-radius: 16px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: 1px solid #2a2a4a;
+        }
+        .gen-header {
+            padding: 20px 24px;
+            cursor: default;
+        }
+        .gen-header h2 {
+            font-size: 1.4em;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .gen-header h2 span {
+            font-size: 0.7em;
+            color: #aaa;
+        }
+        .gen-header .gen-desc {
+            color: #aaa;
+            font-size: 0.9em;
+            margin-top: 6px;
+        }
+        .gen-badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.7em;
+            font-weight: 600;
+        }
+        .table-wrap { overflow-x: auto; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+        th {
+            background: #2a2a4a;
+            color: #ccc;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        td {
+            padding: 12px 16px;
+            border-top: 1px solid #2a2a4a;
+            vertical-align: top;
+        }
+        tr:hover td { background: rgba(102, 126, 234, 0.08); }
+        .console-name { font-weight: 600; color: #fff; }
+        .company { color: #667eea; }
+        .year { white-space: nowrap; color: #ff6b6b; font-weight: 600; }
+        .significance { color: #bbb; font-size: 0.9em; line-height: 1.5; }
+        .footer {
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #2a2a4a;
+        }
+        .footer a { color: #667eea; text-decoration: none; }
+        @media (max-width: 640px) {
+            h1 { font-size: 1.5em; }
+            body { padding: 20px 10px; }
+            td, th { padding: 8px 10px; font-size: 0.85em; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🎮 家用遊戲主機歷史年表</h1>
+    <p class="subtitle">從第一世代到第九世代 · 1972–2026</p>
+
+    <!-- 第一世代 -->
+    <div class="generation">
+        <div class="gen-header">
+            <h2>🟤 第一世代 <span>1972–1980</span></h2>
+            <p class="gen-desc">家用主機的誕生。Pong 熱潮帶動大量專用機，以離散電路為主，不具備可更換軟體的能力。</p>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr><th>年份</th><th>主機名稱</th><th>製造商</th><th>重要意義</th></tr>
+                <tr><td class="year">1972</td><td class="console-name">Magnavox Odyssey</td><td class="company">Magnavox</td><td class="significance">史上第一台家用遊戲主機，使用類比電路與印刷電路板卡</td></tr>
+                <tr><td class="year">1975</td><td class="console-name">Atari Pong (居家版)</td><td class="company">Atari</td><td class="significance">Pong 家用化，大眾市場引爆點</td></tr>
+                <tr><td class="year">1976</td><td class="console-name">Fairchild Channel F</td><td class="company">Fairchild</td><td class="significance">第一台使用 ROM 卡匣的主機，可更換遊戲軟體</td></tr>
+                <tr><td class="year">1977</td><td class="console-name">Atari 2600 (VCS)</td><td class="company">Atari</td><td class="significance">奠定卡匣生態系統，開啟第三方開發（Activision）</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 第二世代 -->
+    <div class="generation">
+        <div class="gen-header">
+            <h2>🔴 第二世代 <span>1976–1984</span></h2>
+            <p class="gen-desc">8-bit 處理器普及，卡匣標準化。市場過度飽和導致 1983 年北美遊戲業大蕭條。</p>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr><th>年份</th><th>主機名稱</th><th>製造商</th><th>重要意義</th></tr>
+                <tr><td class="year">1979</td><td class="console-name">Intellivision</td><td class="company">Mattel</td><td class="significance">首次強調圖形與音效勝過 Atari 2600</td></tr>
+                <tr><td class="year">1982</td><td class="console-name">ColecoVision</td><td class="company">Coleco</td><td class="significance">性能大幅躍升，精準移植大台電玩</td></tr>
+                <tr><td class="year">1983</td><td class="console-name">SG-1000</td><td class="company">Sega</td><td class="significance">Sega 首款家用主機</td></tr>
+                <tr><td class="year">1983</td><td class="console-name">Family Computer (Famicom)</td><td class="company">Nintendo</td><td class="significance">日本發售，紅白機傳奇的起點</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 第三世代 -->
+    <div class="generation">
+        <div class="gen-header">
+            <h2>🟠 第三世代（8-bit 黃金時代） <span>1983–1992</span></h2>
+            <p class="gen-desc">NES 拯救北美遊戲市場。8-bit 主機百家爭鳴，日系廠商崛起，超級瑪利歐、薩爾達等 IP 誕生。</p>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr><th>年份</th><th>主機名稱</th><th>製造商</th><th>重要意義</th></tr>
+                <tr><td class="year">1985</td><td class="console-name">NES (Nintendo Entertainment System)</td><td class="company">Nintendo</td><td class="significance">在北美重新定義家用主機市場，導入品質認證制度（Seal of Quality）</td></tr>
+                <tr><td class="year">1985</td><td class="console-name">Sega Master System</td><td class="company">Sega</td><td class="significance">Sega 在北美首款主力主機，歐洲與巴西保有市佔</td></tr>
+                <tr><td class="year">1987</td><td class="console-name">PC Engine (TurboGrafx-16)</td><td class="company">NEC / Hudson Soft</td><td class="significance">首款使用 CD-ROM 附加元件的主機</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 第四世代 -->
+    <div class="generation">
+        <div class="gen-header">
+            <h2>🟡 第四世代（16-bit 爭霸戰） <span>1987–1996</span></h2>
+            <p class="gen-desc">Mega Drive 與 Super NES 的經典對決。2D 遊戲美術與音樂達到巔峰，RPG 黃金時代。</p>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr><th>年份</th><th>主機名稱</th><th>製造商</th><th>重要意義</th></tr>
+                <tr><td class="year">1988</td><td class="console-name">Mega Drive (Genesis)</td><td class="company">Sega</td><td class="significance">Sega 16-bit 主力，以「Blast Processing」與「SEGA!!」口號打響品牌</td></tr>
+                <tr><td class="year">1990</td><td class="console-name">Super Famicom (SNES)</td><td class="company">Nintendo</td><td class="significance">16-bit 之王，Mode 7 偽 3D 效果，頂級 2D 遊戲庫</td></tr>
+                <tr><td class="year">1991</td><td class="console-name">CD-ROM² / Super CD-ROM²</td><td class="company">NEC</td><td class="significance">PC Engine 的 CD 擴充，開創光碟遊戲時代</td></tr>
+                <tr><td class="year">1993</td><td class="console-name">Mega-CD (Sega CD)</td><td class="company">Sega</td><td class="significance">Mega Drive 的 CD 擴充，FMV 遊戲嘗試</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 第五世代 -->
+    <div class="generation">
+        <div class="gen-header">
+            <h2>🟢 第五世代（32/64-bit · 3D 革命） <span>1993–2002</span></h2>
+            <p class="gen-desc">從 2D 跨入 3D 多邊形時代。CD-ROM 成為主流標準，Sony 以 PlayStation 強勢入局。</p>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr><th>年份</th><th>主機名稱</th><th>製造商</th><th>重要意義</th></tr>
+                <tr><td class="year">1993</td><td class="console-name">Atari Jaguar</td><td class="company">Atari</td><td class="significance">Atari 最後一台主機，64-bit 架構但開發困難</td></tr>
+                <tr><td class="year">1994</td><td class="console-name">PlayStation</td><td class="company">Sony</td><td class="significance">Sony 進軍遊戲界，CD-ROM 普及化，3D 遊戲的定義者</td></tr>
+                <tr><td class="year">1994</td><td class="console-name">Sega Saturn</td><td class="company">Sega</td><td class="significance">雙 CPU 架構，2D 格鬥遊戲移植王者</td></tr>
+                <tr><td class="year">1995</td><td class="console-name">PlayStation (北美)</td><td class="company">Sony</td><td class="significance">北美上市，奠定 Sony 霸主地位</td></tr>
+                <tr><td class="year">1996</td><td class="console-name">Nintendo 64</td><td class="company">Nintendo</td><td class="significance">保留卡匣，4 人搖桿內建，超級瑪利歐 64 與薩爾達時之笛開創 3D 遊戲標準</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 第六世代 -->
+    <div class="generation">
+        <div class="gen-header">
+            <h2>🔵 第六世代（128-bit · DVD 時代） <span>1998–2013</span></h2>
+            <p class="gen-desc">DVD 取代 CD，網路連線萌芽。PS2 創下史上最高銷量紀錄。Sega 退出硬體市場。</p>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr><th>年份</th><th>主機名稱</th><th>製造商</th><th>重要意義</th></tr>
+                <tr><td class="year">1998</td><td class="console-name">Dreamcast</td><td class="company">Sega</td><td class="significance">內建數據機，首款支援網路連線的主機。Sega 最後一台硬體</td></tr>
+                <tr><td class="year">2000</td><td class="console-name">PlayStation 2</td><td class="company">Sony</td><td class="significance">史上銷量最高主機（1.6 億台），DVD 播放功能推波助瀾</td></tr>
+                <tr><td class="year">2001</td><td class="console-name">GameCube</td><td class="company">Nintendo</td><td class="significance">Nintendo 首款光碟主機（小型 DVD），最具爭議的手把設計</td></tr>
+                <tr><td class="year">2001</td><td class="console-name">Xbox</td><td class="company">Microsoft</td><td class="significance">Microsoft 進軍遊戲界，內建硬碟與 Xbox Live 開創線上主機服務</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 第七世代 -->
+    <div class="generation">
+        <div class="gen-header">
+            <h2>🟣 第七世代（HD · 體感 · 網路服務） <span>2005–2017</span></h2>
+            <p class="gen-desc">HD 畫質、體感操作、線上服務三強鼎立。Wii 以藍海策略大獲全勝。</p>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr><th>年份</th><th>主機名稱</th><th>製造商</th><th>重要意義</th></tr>
+                <tr><td class="year">2005</td><td class="console-name">Xbox 360</td><td class="company">Microsoft</td><td class="significance">率先進入 HD 世代，Xbox Live 成熟化，成就系統普及</td></tr>
+                <tr><td class="year">2006</td><td class="console-name">PlayStation 3</td><td class="company">Sony</td><td class="significance">Cell 處理器、Blu-ray 播放，強大但開發困難。後期靠獨佔遊戲逆轉</td></tr>
+                <tr><td class="year">2006</td><td class="console-name">Wii</td><td class="company">Nintendo</td><td class="significance">體感革命（Wii Remote），1.01 億台，拓展非玩家市場</td></tr>
+                <tr><td class="year">2010</td><td class="console-name">Kinect (Xbox 360)</td><td class="company">Microsoft</td><td class="significance">無控制器體感，金氏世界紀錄「最快銷售消費電子產品」</td></tr>
+                <tr><td class="year">2010</td><td class="console-name">PlayStation Move</td><td class="company">Sony</td><td class="significance">Sony 體感控制器，精確追蹤</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 第八世代 -->
+    <div class="generation">
+        <div class="gen-header">
+            <h2>⚪ 第八世代（4K · 數位服務 · 混合主機） <span>2012–至今</span></h2>
+            <p class="gen-desc">x86 架構統一，PS4 與 Xbox One 規格接近 PC。Nintendo Switch 以混合形態重新定義主機。</p>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr><th>年份</th><th>主機名稱</th><th>製造商</th><th>重要意義</th></tr>
+                <tr><td class="year">2012</td><td class="console-name">Wii U</td><td class="company">Nintendo</td><td class="significance">首款 8 代主機，GamePad 平板控制器。商業失敗僅 1356 萬台</td></tr>
+                <tr><td class="year">2013</td><td class="console-name">PlayStation 4</td><td class="company">Sony</td><td class="significance">x86 架構、開發容易，第一方獨佔強勁（1.17 億台）</td></tr>
+                <tr><td class="year">2013</td><td class="console-name">Xbox One</td><td class="company">Microsoft</td><td class="significance">初期政策失誤（強制連線、綁 Kinect），後以 Game Pass 翻身</td></tr>
+                <tr><td class="year">2016</td><td class="console-name">PlayStation 4 Pro</td><td class="company">Sony</td><td class="significance">首款 mid-gen 升級主機，4K 解析度</td></tr>
+                <tr><td class="year">2017</td><td class="console-name">Nintendo Switch</td><td class="company">Nintendo</td><td class="significance">混合式主機（家用+掌機），1.54 億台，史上第三暢銷</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 第九世代 -->
+    <div class="generation">
+        <div class="gen-header">
+            <h2>⚫ 第九世代（光線追蹤 · SSD 極速 · 跨平台） <span>2020–至今</span></h2>
+            <p class="gen-desc">即時光線追蹤、超高速 SSD 讀取、跨平台遊戲普及。PC 與主機界線更加模糊。</p>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr><th>年份</th><th>主機名稱</th><th>製造商</th><th>重要意義</th></tr>
+                <tr><td class="year">2020</td><td class="console-name">Xbox Series X / Series S</td><td class="company">Microsoft</td><td class="significance">4K/60fps 目標，向下相容四世代，Series S 為低價數位版</td></tr>
+                <tr><td class="year">2020</td><td class="console-name">PlayStation 5</td><td class="company">Sony</td><td class="significance">自訂 SSD 架構（8-9GB/s），近乎零讀取，DualSense 自適應扳機</td></tr>
+                <tr><td class="year">2021</td><td class="console-name">Nintendo Switch OLED</td><td class="company">Nintendo</td><td class="significance">OLED 螢幕、增強支架，第八/九代跨代競爭</td></tr>
+                <tr><td class="year">2025</td><td class="console-name">Nintendo Switch 2</td><td class="company">Nintendo</td><td class="significance">Nintendo 最新主機，效能低於 PS5/XSX，定位獨特</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>資料來源：NotebookLM 筆記本「新世代復古遊戲主機硬體設計」· 90 筆資料來源</p>
+        <p>由 Claude Code + NotebookLM MCP 自動生成 · <a href="https://github.com/albiondu">Albion Du</a></p>
+    </div>
+</div>
+</body>
+</html>
